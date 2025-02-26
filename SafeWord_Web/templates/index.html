@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeWord Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SafeWord</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            {% if 'user_id' in session %}
+                <a href="/profile">Profile</a>
+            {% endif %}
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h1>SafeWord Web App</h1>
+            <p>Say the safe word to trigger an emergency alert.</p>
+
+            <div class="input-group">
+                <label for="safeWord">Set Safe Word:</label>
+                <input type="text" id="safeWord" value="help">
+                <button class="btn-set" onclick="setSafeWord()">Set Safe Word</button>
+            </div>
+
+            <div class="button-group">
+                <button id="listenButton" class="btn-listen" onclick="toggleListening()">Start Listening</button>
+            </div>
+
+            <div class="status">
+                <p id="status">Status: Not listening</p>
+                <p id="location">Location: Unknown</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

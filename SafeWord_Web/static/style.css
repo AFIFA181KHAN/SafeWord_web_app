@@ -1,0 +1,432 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #2a2a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff6f61;
+}
+
+nav .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav .nav-links a:hover {
+    color: #ff6f61;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Card */
+.card {
+    background-color: #2a2a40;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #a0a0a0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+/* Buttons */
+.btn-set, .btn-listen {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-set {
+    background-color: #ff6f61;
+    color: #ffffff;
+}
+
+.btn-set:hover {
+    background-color: #e65a50;
+}
+
+.btn-listen {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.btn-listen:hover {
+    background-color: #43a047;
+}
+
+/* Status */
+.status {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a0a0a0;
+    text-align: left;
+}
+
+.status p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status i {
+    font-size: 16px;
+}
+
+/* Add these styles to your existing CSS */
+
+/* Contact Form */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+/* About Page Styles */
+.about-container {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #a0a0a0;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.about-card {
+    background-color: #2a2a40;
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-card i {
+    font-size: 40px;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.about-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+/* Team Section Styles */
+.team-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card {
+    background-color: #2a2a40;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+/* Lead Developer Card */
+.lead-developer {
+    margin-bottom: 30px; /* Add space below the lead developer */
+}
+
+/* Team Row for Other Members */
+.team-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between team members */
+}
+
+/* Sign Up and Login Page Styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card {
+    background-color: #2a2a40;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #a0a0a0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+
+.btn-set {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6f61;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-set:hover {
+    background-color: #e65a50;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.alert-error {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+/* Profile Page Styles */
+.profile-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #a0a0a0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info i {
+    font-size: 18px;
+    color: #ff6f61;
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-logout:hover {
+    background-color: #d32f2f;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #2a2a40;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff6f61;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #ff6f61;
+}

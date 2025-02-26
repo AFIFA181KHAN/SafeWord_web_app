@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SafeWord</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SafeWord</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            {% if 'user_id' in session %}
+                <a href="/profile">Profile</a>
+            {% endif %}
+        </div>
+    </nav>
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About SafeWord</h1>
+            <p>Your safety is our priority. SafeWord is designed to help you in emergencies with just a word.</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-card">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Our Mission</h2>
+                <p>We aim to provide a simple and effective way for users to alert their emergency contacts and authorities in critical situations.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-lightbulb"></i>
+                <h2>How It Works</h2>
+                <p>Just say the safe word, and SafeWord will send your location to your emergency contacts and authorities instantly.</p>
+            </div>
+
+            <div class="about-card">
+                <i class="fas fa-users"></i>
+                <h2>Our Team</h2>
+                <p>We are a group of passionate developers dedicated to creating solutions that make a difference.</p>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-cards">
+                <!-- Lead Developer at the top -->
+                <div class="team-card lead-developer">
+                    <h3>Affia Khan</h3>
+                    <p>Lead Developer</p>
+                </div>
+        
+                <!-- Other team members below -->
+                <div class="team-row">
+                    <div class="team-card">
+                        <h3>Akrati Pansari</h3>
+                        <p>Backend Developer</p>
+                    </div>
+        
+                    <div class="team-card">
+                        <h3>Neha Vishwakarma</h3>
+                        <p>Backend Developer</p>
+                    </div>
+        
+                    <div class="team-card">
+                        <h3>Aditya Singh</h3>
+                        <p>UI/UX Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>            </div>
+        </div>
+    </div>
+</body>
+</html>
